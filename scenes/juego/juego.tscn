@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3hu45t4clrbp"]
+[gd_scene load_steps=4 format=3 uid="uid://b3hu45t4clrbp"]
 
 [ext_resource type="Texture2D" uid="uid://buukgufc2fyw5" path="res://assets/Backgrounds/Castle World/bg1.png" id="1_yy1fn"]
 [ext_resource type="PackedScene" uid="uid://bchoygwvdukgk" path="res://scenes/dragon/dragon.tscn" id="2_gyn45"]
+[ext_resource type="PackedScene" uid="uid://dlgat4bv8sk3n" path="res://scenes/barreras/barreras.tscn" id="3_6o5sv"]
 
 [node name="Juego" type="Node2D"]
 
@@ -12,3 +13,9 @@ texture = ExtResource("1_yy1fn")
 
 [node name="Dragon" parent="." instance=ExtResource("2_gyn45")]
 position = Vector2(64, 518)
+
+[node name="barreras" parent="." instance=ExtResource("3_6o5sv")]
+position = Vector2(0, -27)
+
+[node name="barreraPiso" parent="." instance=ExtResource("3_6o5sv")]
+position = Vector2(0, 1029)
