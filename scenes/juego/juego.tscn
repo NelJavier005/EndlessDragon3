@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3hu45t4clrbp"]
+
+[ext_resource type="Texture2D" uid="uid://buukgufc2fyw5" path="res://assets/Backgrounds/Castle World/bg1.png" id="1_yy1fn"]
+[ext_resource type="PackedScene" uid="uid://bchoygwvdukgk" path="res://scenes/dragon/dragon.tscn" id="2_gyn45"]
+
+[node name="Juego" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(250, 685)
+scale = Vector2(2.16667, 2.68555)
+texture = ExtResource("1_yy1fn")
+
+[node name="Dragon" parent="." instance=ExtResource("2_gyn45")]
+position = Vector2(64, 518)
